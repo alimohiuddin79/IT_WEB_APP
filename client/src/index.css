@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#landingPage{
+  background: url(./assets/nasa-Q1p7bh3SHj8-unsplash.jpg);
+  @apply min-h-screen;
+}
