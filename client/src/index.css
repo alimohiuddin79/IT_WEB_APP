@@ -10,8 +10,9 @@ body{
 }
 
 #landingPage{
-  background: url(./assets/nasa-Q1p7bh3SHj8-unsplash.jpg);
-  @apply min-h-screen;
+  background: url(./assets/4833552.jpg);
+  background-size: cover;
+  @apply h-[85vh];
 }
 
 
@@ -58,4 +59,46 @@ box-shadow: 0px 0px 50px 125px rgba(255,46,88,0.9); */
   100%{
     transform: rotateX(360deg) rotateY(-360deg);
   }
+}
+
+.btn-p{
+  background: linear-gradient(45deg, #030304ed, #1857e2);
+  padding: 13px 35px;
+  color: #fff;
+  font-size: 16px;
+  border: 2px solid;
+  transition: 1s cubic-bezier(0.51, 0.92, 0.27, 0.96) !important;
+  border-radius: 7px;
+  box-shadow: 1px 0px 13px #184dc1c2;
+}
+
+.btn-p:hover{
+  background: linear-gradient(270deg, #030304ed, #1857e2)
+}
+
+.btn-s{
+  background: #b1065500;
+  padding: 13px 35px;
+  color: #1857e2;
+  font-size: 16px;
+  border-radius: 7px;
+  margin: 0 0 0 20px;
+  border: 2px solid;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.btn-s:hover{
+  background: linear-gradient(45deg, #030304ed, #1857e2);
+
+  color: white;
+  border: 0px;
+}
+
+#client-wrap{
+  background: #134E5E;
+  background: -webkit-linear-gradient(to right, #7658ee, #9221b2);
+  background: linear-gradient(45deg, #030304ed, #1857e2);
+  padding: 40px 0 30px;
+  overflow: hidden;
 }

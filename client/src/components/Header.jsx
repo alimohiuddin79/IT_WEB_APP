@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <header className="bg-transparent fixed top-0 w-full z-50">
             <div className={`relative flex flex-row flex-wrap justify-between xl:px-32 lg:px-26 px-12 py-6 transition-all duration-300 ${showNavItems && 'flex-col justify-center align-middle'}`}>
-                <Link to={'/'} className="text-2xl text-slate-400 hover:text-slate-600">Tech Binders</Link>
+                <Link to={'/'} className="text-2xl text-violet-500 hover:text-slate-600 font-bold">Design Sorcerer</Link>
                 <ul 
                     className={`justify-center items-center ${showNavItems ? 'flex-col mt-3' : 'hidden md:flex'}`}>
                         <NavLink showNavItems={showNavItems} to={'/'} title='Home'/>
