@@ -13,3 +13,49 @@ body{
   background: url(./assets/nasa-Q1p7bh3SHj8-unsplash.jpg);
   @apply min-h-screen;
 }
+
+
+
+#circle{
+  -webkit-box-shadow:0px 0px 55px 65px rgba(255,46,88,0.9);
+  -moz-box-shadow: 0px 0px 55px 65px rgba(255,46,88,0.9);
+  box-shadow: 0px 0px 55px 65px rgba(255,46,88,0.9);
+  transform: rotateX(45deg) rotateY(-45deg);
+  animation: inner-rotate 5s alternate infinite;
+}
+
+/* -webkit-box-shadow:0px 0px 50px 125px rgba(255,46,88,0.9);
+-moz-box-shadow: 0px 0px 50px 125px rgba(255,46,88,0.9);
+box-shadow: 0px 0px 50px 125px rgba(255,46,88,0.9); */
+
+@keyframes inner-rotate {
+  0%{
+    transform: rotateX(45deg) rotateY(0);
+  }
+  100%{
+    transform: rotateX(270deg) rotateY(360deg);
+  }
+}
+
+
+
+#bigCircle{
+  -webkit-box-shadow:0px 0px 24px 22px rgba(255,46,88,0.9);
+  -moz-box-shadow: 0px 0px 24px 22px rgba(255,46,88,0.9);
+  box-shadow: inset 0px 0px 24px 22px rgba(255,46,88,0.9);
+  transform: rotateX(0) rotateY(0);
+  animation: outer-rotate 7s alternate infinite;
+}
+
+/* -webkit-box-shadow:0px 0px 105px 45px rgba(255,46,88,0.9);
+  -moz-box-shadow: 0px 0px 105px 45px rgba(255,46,88,0.9);
+  box-shadow:  0px 0px 105px 45px rgba(255,46,88,0.9); */
+
+@keyframes outer-rotate {
+  0%{
+    transform: rotateX(45deg) rotateY(0);
+  }
+  100%{
+    transform: rotateX(360deg) rotateY(-360deg);
+  }
+}
